@@ -10,7 +10,7 @@ source:
   sha256: 49ca085451324d524177c5c188f95bccd3ef8d96b64ce1094b285b733150e38f
 
 build:
-  number: 1000
+  number: 1001
   # We can drop this skip when we add wxpython-phoenix.
   skip: True  # [py3k]
   script: python setup.py install --single-version-externally-managed --record record.txt
@@ -18,7 +18,7 @@ build:
     - dose = dose.__main__:main
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
   run:
